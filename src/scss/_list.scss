@@ -1,0 +1,75 @@
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+table {
+    display: block;
+    max-width: 100%;
+}
+.list {
+    margin-top: 12px;
+    thead {
+        display: block;
+        width: 100%;
+        tr {
+            @include setText(#fff, 1.8rem, 600);
+            text-align: center;
+            width: 100%;
+            display:flex;
+            th {
+                padding:  8px 12px;
+                flex:1;
+            }
+        }
+    }
+    tbody {
+        display: block;
+        width: 100%;
+        tr {
+            width: 100%;
+            display:flex;
+            td {
+                @include setText(#fff, 1.8rem, 400);
+                text-align: center;
+                padding: 8px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                flex: 1;
+                line-height: 2;
+                .btn {
+                    @include setText(#fff, 1.8rem, 500);
+                    padding: 8px 12px;
+                    border: none;
+                    border-radius: 4px;
+                    outline: none;
+                    margin: 0 4px;
+                    transition: all 0.2s;
+                    &__update {
+                        background-color: #F7AD4B;
+                    }
+                    &__delete {
+                        background-color: #E65E4D;
+                    }
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+                .finish {
+                    background-color: #12E41D;
+                    font-weight: 600;
+                    color: #fff;
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    line-height: 1.5;
+                    display: inline-block;
+                }
+                .unfinish {
+                    // background-color: #EC407A;
+                    color: #fff;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}

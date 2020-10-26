@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.wrapper {
+  background: url("https://ardera.com/wp-content/uploads/2016/07/tech-background-image-1-1.jpg") no-repeat;
+  background-size: cover;
+  padding: 42px 0;
+  height: 100vh; }
+  .wrapper h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center; }
+  .wrapper .container {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: 42px auto; }
+    .wrapper .container .right__block {
+      padding: 0 24px; }
+
+.form {
+  border: 1px solid grey;
+  border-radius: 4px; }
+  .form h4 {
+    color: #000;
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 8px;
+    background-color: #FEF5E2; }
+  .form hr {
+    margin-bottom: 8px; }
+  .form .form__group {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .form .form__group label {
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 600;
+      width: 30%; }
+    .form .form__group input, .form .form__group select {
+      color: #000;
+      font-size: 1.6rem;
+      font-weight: 500;
+      width: 70%;
+      padding: 4px;
+      outline: none; }
+    .form .form__group button {
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 500;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      margin: 0 4px;
+      transition: all 0.2s; }
+      .form .form__group button.btn__submit {
+        background-color: #2B76B8; }
+      .form .form__group button.btn__close {
+        background-color: #E65E4D; }
+      .form .form__group button:hover {
+        opacity: 0.8; }
+
+.control .btn__toggle {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #2B76B8;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px 12px;
+  transition: all 0.2s; }
+  .control .btn__toggle:hover {
+    opacity: 0.8; }
+  .control .btn__toggle i {
+    padding-right: 4px; }
+.control .control__block {
+  display: flex;
+  margin-top: 12px; }
+  .control .control__block input {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    outline: none;
+    border: 1px solid grey; }
+  .control .control__block button {
+    border-radius: 0; }
+
+table, th, td {
+  border: 1px solid grey;
+  border-collapse: collapse; }
+
+table {
+  display: block;
+  max-width: 100%; }
+
+.list {
+  margin-top: 12px; }
+  .list thead {
+    display: block;
+    width: 100%; }
+    .list thead tr {
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      display: flex; }
+      .list thead tr th {
+        padding: 8px 12px;
+        flex: 1; }
+  .list tbody {
+    display: block;
+    width: 100%; }
+    .list tbody tr {
+      width: 100%;
+      display: flex; }
+      .list tbody tr td {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+        padding: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex: 1;
+        line-height: 2; }
+        .list tbody tr td .btn {
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding: 8px 12px;
+          border: none;
+          border-radius: 4px;
+          outline: none;
+          margin: 0 4px;
+          transition: all 0.2s; }
+          .list tbody tr td .btn__update {
+            background-color: #F7AD4B; }
+          .list tbody tr td .btn__delete {
+            background-color: #E65E4D; }
+          .list tbody tr td .btn:hover {
+            opacity: 0.8; }
+        .list tbody tr td .finish {
+          background-color: #12E41D;
+          font-weight: 600;
+          color: #fff;
+          padding: 4px 8px;
+          border-radius: 8px;
+          line-height: 1.5;
+          display: inline-block; }
+        .list tbody tr td .unfinish {
+          color: #fff;
+          line-height: 2; }
+
+.alert {
+  position: fixed;
+  top: calc(0% + 24px);
+  left: 50%;
+  width: 20%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.4s; }
+  .alert__add {
+    color: #fff;
+    background-color: #2196F3; }
+  .alert__update {
+    color: #fff;
+    background-color: #FF9800; }
+
+/*# sourceMappingURL=main.css.map */

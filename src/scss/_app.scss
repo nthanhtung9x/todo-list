@@ -1,0 +1,22 @@
+.wrapper {
+    background: url('https://ardera.com/wp-content/uploads/2016/07/tech-background-image-1-1.jpg') no-repeat;
+    background-size: cover;
+    padding: 42px 0;
+    height: 100vh;
+    h1 {
+        @include setText(#fff, 4rem, 600);
+        text-align: center;
+    }
+    .container {
+        display:flex;
+        flex-direction: row;
+        width: 1200px;
+        margin: 42px auto;
+        .left__block {
+            
+        }
+        .right__block {
+           padding: 0 24px;
+        }
+    }
+}

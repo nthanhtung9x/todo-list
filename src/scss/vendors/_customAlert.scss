@@ -1,0 +1,24 @@
+.alert {
+    position: fixed;
+    top:calc(0% + 24px);
+
+    left:50%;
+    width: 20%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.4s;
+    &__add {
+        color: #fff;
+        background-color: #2196F3;
+    }
+    &__update {
+        color: #fff;
+        background-color: #FF9800;
+    }
+}
