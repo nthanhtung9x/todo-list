@@ -44,7 +44,6 @@ export default (state = initialState, action) => {
         }
         case types.DELETE_ITEM: {
             let list = [...state.listItem];
-            console.log(action.item.id);
             let index = list.findIndex(item => item.id.indexOf(action.item.id) !== -1);
             list.splice(index, 1);
             state = {

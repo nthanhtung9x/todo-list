@@ -1,7 +1,15 @@
+export const FETCH_DATA_ITEM = 'FETCH_DATA_ITEM';
 export const GET_ALL_ITEM = 'GET_ALL_ITEM';
+export const WATCH_TOGGLE_FORM = 'WATCH_TOGGLE_FORM';
 export const TOGGLE_FORM = 'TOGGLE_FORM';
+export const WATCH_ADD_ITEM = 'WATCH_ADD_ITEM';
 export const ADD_ITEM = 'ADD_ITEM';
+
+export const WATCH_DELETE_ITEM = 'WATCH_DELETE_ITEM';
 export const DELETE_ITEM = 'DELETE_ITEM';
+
+export const WATCH_UPDATE_ITEM = 'WATCH_UPDATE_ITEM';
 export const UPDATE_ITEM = 'UPDATE_ITEM';
+
 export const ASSIGN_ITEM_UPDATE = 'ASSIGN_ITEM_UPDATE';
 export const SEARCH_ITEM = 'SEARCH_ITEM';

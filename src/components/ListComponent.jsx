@@ -7,7 +7,7 @@ const ListComponent = () => {
     const list = useSelector(state => state.AppReducer);
 
     useEffect(() => {
-        dispatch(action.getListAPI());
+        dispatch(action.fetchListData());
     }, [list.search]);
 
     return (

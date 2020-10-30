@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
 import * as actions from '../redux/actions';
@@ -12,7 +12,11 @@ const ItemComponent = ({ item }) => {
             if (item.title.trim().toLowerCase().indexOf(search.trim().toLowerCase()) !== -1) {
                 return <tr>
                     <td>{item.id}</td>
-                    <td>{item.title}</td>
+                    <td>
+                        <span title={item.title}>
+                            {item.title}
+                        </span>
+                    </td>
                     <td>
                         <span className={String(item.completed) == "true" ? 'finish' : 'unfinish'}>{String(item.completed) == "true" ? 'Hoàn thành' : 'Chưa hoàn thành'}</span>
                     </td>
@@ -25,7 +29,11 @@ const ItemComponent = ({ item }) => {
         } else {
             return <tr>
                 <td>{item.id}</td>
-                <td>{item.title}</td>
+                <td>
+                    <span title={item.title}>
+                        {item.title}
+                    </span>
+                </td>
                 <td>
                     <span className={String(item.completed) == "true" ? 'finish' : 'unfinish'}>{String(item.completed) == "true" ? 'Hoàn thành' : 'Chưa hoàn thành'}</span>
                 </td>

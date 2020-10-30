@@ -10,7 +10,7 @@ html {
   background: url("https://ardera.com/wp-content/uploads/2016/07/tech-background-image-1-1.jpg") no-repeat;
   background-size: cover;
   padding: 42px 0;
-  height: 100vh; }
+  min-height: 100vh; }
   .wrapper h1 {
     color: #fff;
     font-size: 4rem;
@@ -19,10 +19,22 @@ html {
   .wrapper .container {
     display: flex;
     flex-direction: row;
-    width: 1200px;
+    width: 80%;
     margin: 42px auto; }
+    @media (max-width: 480px) {
+      .wrapper .container {
+        width: 100%;
+        flex-direction: column; } }
+    @media (max-width: 480px) {
+      .wrapper .container .left__block {
+        padding: 0 24px;
+        width: 100% !important; } }
     .wrapper .container .right__block {
       padding: 0 24px; }
+      @media (max-width: 480px) {
+        .wrapper .container .right__block {
+          width: 100% !important;
+          padding-top: 12px; } }
 
 .form {
   border: 1px solid grey;
@@ -126,6 +138,9 @@ table {
     .list tbody tr {
       width: 100%;
       display: flex; }
+      @media (max-width: 480px) {
+        .list tbody tr {
+          align-items: center; } }
       .list tbody tr td {
         color: #fff;
         font-size: 1.8rem;
@@ -137,6 +152,10 @@ table {
         text-overflow: ellipsis;
         flex: 1;
         line-height: 2; }
+        @media (max-width: 480px) {
+          .list tbody tr td {
+            line-height: 5;
+            padding: 8px 0; } }
         .list tbody tr td .btn {
           color: #fff;
           font-size: 1.8rem;
@@ -147,6 +166,12 @@ table {
           outline: none;
           margin: 0 4px;
           transition: all 0.2s; }
+          @media (max-width: 480px) {
+            .list tbody tr td .btn {
+              padding: 8px 0;
+              display: block;
+              width: 100%;
+              margin: 8px 2px; } }
           .list tbody tr td .btn__update {
             background-color: #F7AD4B; }
           .list tbody tr td .btn__delete {
@@ -161,6 +186,10 @@ table {
           border-radius: 8px;
           line-height: 1.5;
           display: inline-block; }
+          @media (max-width: 480px) {
+            .list tbody tr td .finish {
+              font-size: 1.4rem;
+              padding: 12px 2px; } }
         .list tbody tr td .unfinish {
           color: #fff;
           line-height: 2; }
